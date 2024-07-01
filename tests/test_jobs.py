@@ -34,9 +34,8 @@ class TestJobs(BaseTest):
     @mock_connections(patch("requests.Session.get", side_effect=mocked_raise_exception))
     def test_get_job_by_id_invalid(self, mock_requests):
         job_id = 999
-        self.assertRaises(
-            ThreatMatrixClientException, self.client.get_job_by_id, job_id
-        )
+        with self.assertRaises(ThreatMatrixClientException):
+            self.client.get_job_by_id(job_id)
 
     @mock_connections(
         patch("requests.Session.delete", side_effect=mocked_delete_job_by_id)
