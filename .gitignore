@@ -1,0 +1,13 @@
+.idea
+build
+dist
+pythreatmatrix.egg-info
+venv/
+tests/test_files/
+*.exe
+__pycache__
+.vscode
+api_token_value.txt
+docs/_build/
+.tox
+.pytest_cache
