@@ -1,12 +1,13 @@
 [flake8]
 max-line-length = 91
-ignore =
-    W503, # line break before binary operator
-    E231, # missing whitespace after ','
-    W605, # invalid escape sequence
-    W291, # trailing whitespace
-    E123, # aligning indentation of opening bracket
-    W456  # example error code
+ignore = 
+    W503,  # line break before binary operator
+    E231,  # missing whitespace after ',' (caused by black style)
+    W605,  # invalid escape sequence (caused by regex)
+    W291,  # trailing whitespace
+    E123,
+    W456
+exclude =
     setup.py
     *venv*
     .tox
