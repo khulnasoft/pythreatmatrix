@@ -5,8 +5,7 @@ ignore =
     E231,
     W605,
     W291,
-    E123,
-    W456
+    # Verify and correct error codes
 exclude =
     setup.py
     *venv*
