@@ -31,7 +31,9 @@ class TestTags(BaseTest):
     @mock_connections(patch("requests.Session.get", side_effect=mocked_raise_exception))
     def test_get_tag_by_id_invalid(self, mock_requests):
         tag_id = 999
-        self.assertRaises(ThreatMatrixClientException, self.client.get_tag_by_id, tag_id)
+        self.assertRaises(
+            ThreatMatrixClientException, self.client.get_tag_by_id, tag_id
+        )
 
     @mock_connections(patch("requests.Session.post", side_effect=mocked_create_tag))
     def test_create_tag_success(self, mock_requests):
@@ -48,7 +50,9 @@ class TestTags(BaseTest):
     def test_create_tag_failure(self, mock_requests):
         label = "test-tag"
         color = "white"
-        self.assertRaises(ThreatMatrixClientException, self.client.create_tag, label, color)
+        self.assertRaises(
+            ThreatMatrixClientException, self.client.create_tag, label, color
+        )
 
     @mock_connections(patch("requests.Session.put", side_effect=mocked_edit_tag))
     def test_edit_tag_valid_id(self, mock_requests):
@@ -82,4 +86,6 @@ class TestTags(BaseTest):
     )
     def test_delete_tag_by_id_failure(self, mock_requests):
         tag_id = 1
-        self.assertRaises(ThreatMatrixClientException, self.client.delete_tag_by_id, tag_id)
+        self.assertRaises(
+            ThreatMatrixClientException, self.client.delete_tag_by_id, tag_id
+        )
