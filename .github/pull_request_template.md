@@ -3,6 +3,7 @@
 Please include a summary of the change.
 
 ## Related issues
+
 Please add related issues.
 
 ## Type of change
@@ -16,13 +17,14 @@ Please delete options that are not relevant.
 # Checklist
 
 - [ ] The pull request is for the branch develop
-- [ ] I have added tests in the [Tests](https://github.com/khulnasoft/pythreatmatrix/tree/master/tests) folder. 
+- [ ] I have added tests in the [Tests](https://github.com/khulnasoft/pythreatmatrix/tree/master/tests) folder.
 - [ ] The tests gave 0 errors.
 - [ ] `Black` gave 0 errors.
 - [ ] `Flake` gave 0 errors.
 - [ ] I squashed the commits into a single one. (optional, they will be squashed anyway by the maintainer)
-  
+
 ### please follow these rules
+
 - If your changes decrease the overall tests coverage (you will know after the Codecov CI job is done), you should add the required tests to fix the problem
 - Everytime you make changes to the PR and you think the work is done, you should explicitly ask for a review
 

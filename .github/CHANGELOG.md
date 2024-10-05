@@ -1,36 +1,54 @@
 # Changelog
 
+## [5.0.2](https://github.com/khulnasoft/pythreatmatrix/releases/tag/5.0.2)
+
+Fixed previous broken release
+
+## [5.0.1](https://github.com/khulnasoft/pythreatmatrix/releases/tag/5.0.1)
+
+- Updated documentation
+- Removed old endpoints
+
 ## [5.0.0](https://github.com/khulnasoft/pythreatmatrix/releases/tag/5.0.0)
+
 - Fixes for Playbook Analysis
 
 ## [4.4.7](https://github.com/khulnasoft/pythreatmatrix/releases/tag/4.4.7)
+
 - Fixed Running Playbook without TLP set
 
 ## [4.4.6](https://github.com/khulnasoft/pythreatmatrix/releases/tag/4.4.6)
+
 - Readded default TLP for analysis as TLP:CLEAR for "classic" analyses only (the ones that do not leverage a Playbook)
 
-
 ## [4.4.5](https://github.com/khulnasoft/pythreatmatrix/releases/tag/4.4.5)
+
 - Default TLP for analysis is not TLP:CLEAR anymore. For instance, this prevents the client to overwrite the TLP configuration of a Playbook.
 
 ## [4.4.4](https://github.com/khulnasoft/pythreatmatrix/releases/tag/4.4.4)
+
 - Little fixes
 
 ## [4.4.3](https://github.com/khulnasoft/pythreatmatrix/releases/tag/4.4.3)
+
 - Fixed client results management in case of errors
 - Removed support for Python 3.7
 
 ## [4.4.2](https://github.com/khulnasoft/pythreatmatrix/releases/tag/4.4.2)
+
 - Added support for TLP:CLEAR
 
 ## [4.4.1](https://github.com/khulnasoft/pythreatmatrix/releases/tag/4.4.1)
+
 - Analyzing a File with a Playbook now works correctly
 - other little bug fixing
 
 ## [4.4.0](https://github.com/khulnasoft/pythreatmatrix/releases/tag/4.4.0)
+
 - this version supports the usage of a proxy while connecting to ThreatMatrix via Python code.
 
 ## [4.3.0](https://github.com/khulnasoft/pythreatmatrix/releases/tag/4.3.0)
+
 - this version supports the new Playbooks feature released with ThreatMatrix v4.1.0
 
 ## [4.2.0](https://github.com/khulnasoft/pythreatmatrix/releases/tag/4.2.0)
@@ -203,7 +221,7 @@ Added an option when executing pythreatmatrix as CLI: `-sc` will show the result
 **Example:**
 
 ```
-python3 intel_owl_client.py -i <your_threatmatrix_instance> -sc -a VirusTotal_v2_Get_Observable -a HybridAnalysis_Get_Observable -a OTXQuery observable -v www.google.com
+python3 threat_matrix_client.py -i <your_threatmatrix_instance> -sc -a VirusTotal_v2_Get_Observable -a HybridAnalysis_Get_Observable -a OTXQuery observable -v www.google.com
 ```
 
 ## [1.0.0](https://github.com/khulnasoft/pythreatmatrix/releases/tag/1.0.0)
