@@ -1,6 +1,6 @@
 pytest
 mock
-black==22.3.0
+black==24.10.0
 flake8==4.0.1
 isort==5.10.1
 pre-commit==2.17.0
